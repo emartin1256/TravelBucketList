@@ -1,0 +1,70 @@
+{% load mathfilters %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/font-awesome/css/font-awesome.min.css' %}">
+    <title>Travel Bucket List</title>
+    <h1>Travel Bucket List.</h1>
+  </head>
+  <body>
+    <div class="item">
+      <div class="container">
+        <img src="{% static 'images/map.jpeg' %}" id="map" alt="" />
+          {% for travel_item in all_items %}
+          <i class="fa fa-map-pin" id="{{ travel_item.content }}" ></i>
+          {% endfor %}
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: {{ all_items.count|mul:4.35|floatformat:'0' }}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{ all_items.count|mul:4.35|floatformat:'0' }}%</div>
+      </div>
+      <ul class="lists" id="add-form">
+        {% for travel_item in all_items %}
+          <li>{{ travel_item.content }}
+            <form id="delete" action="/deleteTravel/{{travel_item.id}}/"
+                  style="display: inline;"
+                  method="post">{% csrf_token %}
+              <input id="submit-button" type="submit" value="X"/>
+            </form>
+          </li>
+        {% endfor %}
+      </ul>
+      <form class="lists" id="add-form" action="/addTravel/" method="post">{% csrf_token %}
+        <input list="country" name="content" autocomplete="off" required>
+
+              <datalist id="country">
+
+                <option value="London">
+                <option value="NewYork">
+                <option value="HongKong">
+                <option value="LosAngeles">
+                <option value="Sydney">
+                <option value="CapeTown">
+                <option value="BuenosAires">
+                <option value="Cairo">
+                <option value="Hawaii">
+                <option value="Rome">
+                <option value="Tokyo">
+                <option value="Moscow">
+                <option value="CapeVerde">
+                <option value="Bali">
+                <option value="Lagos">
+                <option value="Casablanca">
+                <option value="Rejkjavik">
+                <option value="Rio">
+                <option value="Bangkok">
+                <option value="Wellington">
+                <option value="Nairobi">
+                <option value="Barcelona">
+                <option value="Stockholm">
+
+              </datalist>
+        <input id="submit-button" type="submit" value="+ Add Destination"/>
+      </form>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>

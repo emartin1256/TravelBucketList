@@ -1,0 +1,279 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+  background-color: #192734;
+}
+h1, h2, h3, h4, h5, h6{
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 500;
+  text-align: center;
+}
+
+img{
+  display: block;
+  max-width:500px;
+  max-height:324px;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+	margin-bottom: 10px;
+}
+.lists{
+  list-style-type: none;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+	font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+}
+#add-form{
+	display: block;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 1px solid white;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #192734;
+  margin-bottom: 10px;
+}
+#delete{
+  cursor: pointer;
+}
+#submit-button{
+  color: white;
+  background-color: #192734;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+li{
+  margin: 10px 0;
+}
+#text-field{
+  border: none;
+
+}
+.container{
+  width: 500px;
+  height: 324px;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid white;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.show{
+  dislay: block;
+}
+#LosAngeles{
+  color: white;
+  position: absolute;
+  top: 158px;
+  z-index: 10;
+  left: 66px;
+  font-size: 18px;
+  color: white;
+}
+#London{
+  color: white;
+  position: absolute;
+  top: 126px;
+  z-index: 10;
+  left: 231px;
+  font-size: 18px;
+  color: white;
+}
+#NewYork{
+  color: white;
+  position: absolute;
+  top: 148px;
+  z-index: 10;
+  left: 127px;
+  font-size: 18px;
+  color: white;
+}
+#Sydney{
+  color: white;
+  position: absolute;
+  top: 258px;
+  z-index: 10;
+  left: 440px;
+  font-size: 18px;
+  color: white;
+}
+#CapeTown{
+  color: white;
+  position: absolute;
+  top: 259px;
+  z-index: 10;
+  left: 256px;
+  font-size: 18px;
+  color: white;
+}
+#BuenosAires{
+  color: white;
+  position: absolute;
+  top: 258px;
+  z-index: 10;
+  left: 149px;
+  font-size: 18px;
+  color: white;
+}
+#HongKong{
+  color: white;
+  position: absolute;
+  top: 178px;
+  z-index: 10;
+  left: 387px;
+  font-size: 18px;
+  color: white;
+}
+#Cairo{
+  color: white;
+  position: absolute;
+  top: 167px;
+  z-index: 10;
+  left: 275px;
+  font-size: 18px;
+  color: white;
+}
+#Hawaii{
+  color: white;
+  position: absolute;
+  top: 180px;
+  z-index: 10;
+  left: 12px;
+  font-size: 18px;
+  color: white;
+}
+#Rome{
+  color: white;
+  position: absolute;
+  top: 146px;
+  z-index: 10;
+  left: 248px;
+  font-size: 18px;
+  color: white;
+}
+#Tokyo{
+  color: white;
+  position: absolute;
+  top: 157px;
+  z-index: 10;
+  left: 424px;
+  font-size: 18px;
+  color: white;
+}
+#Moscow{
+  color: white;
+  position: absolute;
+  top: 117px;
+  z-index: 10;
+  left: 284px;
+  font-size: 18px;
+  color: white;
+}
+#CapeVerde{
+  color: white;
+  position: absolute;
+  top: 189px;
+  z-index: 10;
+  left: 196px;
+  font-size: 18px;
+  color: white;
+}
+#Bali{
+  color: white;
+  position: absolute;
+  top: 220px;
+  z-index: 10;
+  left: 390px;
+  font-size: 18px;
+  color: white;
+}
+#Lagos{
+  color: white;
+  position: absolute;
+  top: 199px;
+  z-index: 10;
+  left: 236px;
+  font-size: 18px;
+  color: white;
+}
+#Casablanca{
+  color: white;
+  position: absolute;
+  top: 159px;
+  z-index: 10;
+  left: 221px;
+  font-size: 18px;
+  color: white;
+}
+#Rejkjavik{
+  color: white;
+  position: absolute;
+  top: 93px;
+  z-index: 10;
+  left: 199px;
+  font-size: 18px;
+  color: white;
+}
+#Rio{
+  color: white;
+  position: absolute;
+  top: 242px;
+  z-index: 10;
+  left: 169px;
+  font-size: 18px;
+  color: white;
+}
+#Bangkok{
+  color: white;
+  position: absolute;
+  top: 190px;
+  z-index: 10;
+  left: 369px;
+  font-size: 18px;
+  color: white;
+}
+#Wellington{
+  color: white;
+  position: absolute;
+  top: 272px;
+  z-index: 10;
+  left: 473px;
+  font-size: 18px;
+  color: white;
+}
+#Nairobi{
+  color: white;
+  position: absolute;
+  top: 210px;
+  z-index: 10;
+  left: 280px;
+  font-size: 18px;
+  color: white;
+}
+#Barcelona{
+  color: white;
+  position: absolute;
+  top: 149px;
+  z-index: 10;
+  left: 231px;
+  font-size: 18px;
+  color: white;
+}
+#Stockholm{
+  color: white;
+  position: absolute;
+  top: 106px;
+  z-index: 10;
+  left: 256px;
+  font-size: 18px;
+  color: white;
+}
